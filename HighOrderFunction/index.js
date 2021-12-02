@@ -1,10 +1,9 @@
-// ANY FUNCTION THAT
-// -- ACCEPTS A FUNCTION AS AN ARGUMENT
-// -- RETURNS A NEW FUNCTION
+// ANY FUNCTION THAT:
+// -- Accepts a function as an argument
+// -- returns a new function
 
 
 // LESSON EXAMPLE
-// -- accepts a function
 const withCount = fn => {
     let count = 0
     return (...args) => {
@@ -13,15 +12,11 @@ const withCount = fn => {
     }
 }
 
-const add = (x, y) => { x + y }
+const add = (x, y) => { return x + y } 
 const countedAdd = withCount(add)
 
 console.log(countedAdd(1,2))
 console.log(countedAdd(2,2))
 console.log(countedAdd(3,2))
-// -- returns a function
 
 // OTHER EXAMPLES
-function highOrder(fn){
-
-}
